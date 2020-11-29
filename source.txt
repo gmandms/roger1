@@ -1,0 +1,18 @@
+Полезные ссылки:
+https://dev.dota2.com/showthread.php?t=58317
+https://kronus.me/2013/02/dota-2-web-api-%D1%87%D0%B0%D1%81%D1%82%D1%8C-n1-2/
+
+
+
+
+
+1. Как получить steamid, если вместо него ник (vanity url) - https://wiki.teamfortress.com/wiki/WebAPI/ResolveVanityURL
+Пример: http://api.steampowered.com/ISteamUser/ResolveVanityURL/v0001/?key=XXXXXXXXXXXXXXXXXXXXXXX&vanityurl=userVanityUrlName
+
+2. Как получить информацию по профилю пользователя steam - 
+Пример: http://api.steampowered.com/ISteamUser/GetPlayerSummaries/v0002/?key=0A01DE7AD6A8F0BAA431949823BDCBDB&steamids=76561198000928595
+
+3. Как получить статистику о сыгранных матчах - https://wiki.teamfortress.com/wiki/WebAPI/GetMatchHistory
+Пример: http://api.steampowered.com/IDOTA2Match_570/GetMatchHistory/v1/?key=0A01DE7AD6A8F0BAA431949823BDCBDB&account_id=76561198020903588&matches_requested=1
+account_id = steamid;
+matches_requested - кол-во матчей
